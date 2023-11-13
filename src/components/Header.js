@@ -2,16 +2,22 @@ import { ReactComponent as MenuIcon } from "../images/menuHeaderButton.svg"
 import { ReactComponent as UserIcon } from "../images/user.svg"
 import { ReactComponent as SearchIcon } from "../images/search.svg"
 
+import {
+    HeaderContainer,
+    StyledHeader,
+    MenuLeftSection
+} from "../styles/Header"
+
 function Header(){
     return(
-        <header name="menu-header-content">
-            <div name="menu-header">
-                <div name="menu-left-button">
-                    <MenuIcon className="menu"/>
+        <HeaderContainer>
+            <StyledHeader>
+                <MenuLeftSection>
+                    <MenuIcon />
                     <img src="https://resources.redbull.com/logos/redbullcom/v3/redbullcom-logo.svg"
                     alt="Red Bull Logo" 
                     className="Logo" />
-                </div>
+                </MenuLeftSection>
                 <div name="nav-pill">
                     <h4 name="nav-content">TV</h4>
                     <h4 name="nav-content">Events</h4>
@@ -22,8 +28,8 @@ function Header(){
                     <UserIcon className="svg" id="user" />
                     <SearchIcon className="svg" id="search" />
                 </div>
-            </div>
-        </header>
+            </StyledHeader>
+        </HeaderContainer>
     )
 }
 
