@@ -1,20 +1,35 @@
 import styled from "styled-components"
 
-export const HeaderContainer = styled.div`
-    width:100%;
-    /* position:fixed; */
+export const HeaderContainer = styled.header`
+    align-items:center;
+    display:flex;
+    height: 100%;
+    justify-content:space-between;
+    margin: 0 auto;
+    max-width: 1600px;
+    position: relative;
+    width: 100%;
+
+    @media screen and (min-width: 1600px) {
+        max-width:none;
+    }
+
+    @media screen and (min-width: 1000px) {
+        margin: 0 auto;
+        max-width: 1920px;
+    }
 `;
 
 export const StyledHeader = styled.div`
-    left: 0;
-    position: fixed;
-    justify-content: space-between;
-    background: #00162b;
-    align-items: center;
     display: flex;
     flex-direction: row;
-    top: 0;
+    justify-content: space-between;
     width: 100%;
+    left: 0;
+    position: fixed;
+    background: #00162b;
+    align-items: center;
+    top: 0;
     height: 70px;
 `;
 
@@ -43,10 +58,20 @@ export const MenuLeftSection = styled.div`
     }
 `;
 
+export const NavPillWrapper = styled.div`
+    @media screen and (min-width: 650px) {
+        display:flex;
+        margin-left:300px;
+        /* width: calc(100% - 600px); */
+    }
+`;
+
 export const NavPill = styled.div`
     display: flex;
     justify-content: center;
     height:38px;
+    margin:0;
+    padding:0;
     align-items: center;
     background-color:#ffffff0d;
     backdrop-filter: blur(20px);

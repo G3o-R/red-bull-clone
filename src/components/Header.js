@@ -6,6 +6,7 @@ import {
     HeaderContainer,
     StyledHeader,
     MenuLeftSection,
+    NavPillWrapper,
     NavPill,
     MenuRightSection
 } from "../styles/HeadeStyles"
@@ -20,12 +21,14 @@ function Header(){
                     alt="Red Bull Logo" 
                     className="Logo" />
                 </MenuLeftSection>
-                <NavPill>
-                    <h4 name="nav-content">TV</h4>
-                    <h4 name="nav-content">Events</h4>
-                    <h4 name="nav-content">Athletes</h4>
-                    <h4 name="nav-content">Products</h4>
-                </NavPill>
+                <NavPillWrapper>
+                    <NavPill>
+                        <h4 name="nav-content">TV</h4>
+                        <h4 name="nav-content">Events</h4>
+                        <h4 name="nav-content">Athletes</h4>
+                        <h4 name="nav-content">Products</h4>
+                    </NavPill>
+                </NavPillWrapper>
                 <MenuRightSection>
                     <UserIcon className="svg" id="user" />
                     <SearchIcon className="svg" id="search" />
