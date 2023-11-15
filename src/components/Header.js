@@ -5,8 +5,10 @@ import { ReactComponent as SearchIcon } from "../images/search.svg"
 import {
     HeaderContainer,
     StyledHeader,
-    MenuLeftSection
-} from "../styles/Header"
+    MenuLeftSection,
+    NavPill,
+    MenuRightSection
+} from "../styles/HeadeStyles"
 
 function Header(){
     return(
@@ -18,16 +20,16 @@ function Header(){
                     alt="Red Bull Logo" 
                     className="Logo" />
                 </MenuLeftSection>
-                <div name="nav-pill">
+                <NavPill>
                     <h4 name="nav-content">TV</h4>
                     <h4 name="nav-content">Events</h4>
                     <h4 name="nav-content">Athletes</h4>
                     <h4 name="nav-content">Products</h4>
-                </div>
-                <div name="menu-right-buttons">
+                </NavPill>
+                <MenuRightSection>
                     <UserIcon className="svg" id="user" />
                     <SearchIcon className="svg" id="search" />
-                </div>
+                </MenuRightSection>
             </StyledHeader>
         </HeaderContainer>
     )
